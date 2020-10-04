@@ -6,12 +6,99 @@
     <meta name="version" content="0.1" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="index.css/" />
+    <title>Hobby Survey Form</title>
+    <link rel="stylesheet" href="index.css" />
     <script
       src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
       defer
     ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 id="title">Hobby Survey Form</h1>
+      <p id="description">
+        Free time is the most genuine time, and hobbies can help guide us
+        towards our true interests.
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+        <label id="email-label" for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter a valid Email"
+          required
+        />
+        <label id="number-label" for="number">Age</label>
+        <input
+          id="number"
+          min="1"
+          max="10"
+          type="number"
+          name="number"
+          placeholder="Enter your age"
+        />
+        <label for="dropdown"
+          >How many hours a week do you spend on hobbies?</label
+        >
+        <select id="dropdown" name="dropdown">
+          <option value="underone">&lt1</option>
+          <option value="onetotwo">1-2 hours</option>
+          <option value="threetofive">3-5 hours</option>
+          <option value="fivetoten">5-10 hours</option>
+          <option value="greaterthanten">&gt10</option>
+        </select>
+
+        <p>Primary field of interest</p>
+        <input type="radio" name="field-of-interest" id="study" value="study" />
+        <label for="study">Study</label>
+        <input
+          type="radio"
+          name="field-of-interest"
+          id="gaming"
+          value="gaming"
+        />
+        <label for="gaming">Gaming</label>
+        <input type="radio" name="field-of-interest" value="sports" />
+        <label for="sports">Sports</label>
+        <input type="radio" name="field-of-interest" value="traveling" />
+        <label for="traveling">Traveling</label>
+        <input
+          type="radio"
+          id="technology"
+          name="field-of-interest"
+          value="technology"
+        />
+        <label for="technology">Technology</label>
+        <input type="radio" name="field-of-interest" id="art" value="Art" />
+        <label for="art">Art</label>
+
+        <p>What most limits the exploration of your hobby?</p>
+        <input type="checkbox" name="hobby-limits" id="cost" value="cost" />
+        <label for="cost">Cost</label>
+        <input type="checkbox" name="hobby-limits" id="time" value="time" />
+        <label for="time">Time</label>
+        <input type="checkbox" name="hobby-limits" id="cost" value="cost" />
+        <label for="lackofenthusiasts">Lack of other enthusiasts</label>
+        <p></p>
+        <label for="thehobby"
+          >What is the your hobby and which aspect of it do you most
+          enjoy?</label
+        >
+        <textarea id="thehobby" name="thehobby" row="10" cols="50"></textarea>
+
+        <button id="submit" type="submit" value="submit">Submit</button>
+      </form>
+    </main>
+  </body>
 </html>
