@@ -32,31 +32,33 @@
     </header>
     <main>
       <form id="survey-form">
-        <label id="name-label">Name</label>
+        <label for="name">Name</label>
         <input
           id="name"
-          type="text"
           name="name"
+          type="text"
           placeholder="Enter your name"
           required
         />
-        <label id="email-label">Email</label>
+
+        <label for="email">Email</label>
         <input
           id="email"
-          type="email"
           name="email"
+          type="email"
           placeholder="Enter a valid Email"
           required
         />
-        <label id="number-label">Age</label>
+        <label for="number">Age</label>
         <input
           id="number"
+          name="age"
+          type="number"
           min="1"
           max="99"
-          type="number"
-          name="age"
           placeholder="Enter your age"
         />
+
         <label>How many hours a week do you spend on hobbies?</label>
         <select id="dropdown" name="dropdown">
           <option value="onetotwo">1-2 hours</option>
@@ -68,7 +70,7 @@
         <fieldset id="fields">
           <legend>Primary field of interest</legend>
 
-          <label for="study">
+          <label>
             <input
               type="radio"
               name="field-of-interest"
@@ -78,7 +80,7 @@
             Study
           </label>
 
-          <label for="gaming">
+          <label>
             <input
               type="radio"
               name="field-of-interest"
@@ -88,7 +90,7 @@
             Technology
           </label>
 
-          <label for="sports">
+          <label>
             <input
               type="radio"
               id="sports"
@@ -98,7 +100,7 @@
             Sports
           </label>
 
-          <label for="traveling">
+          <label>
             <input
               type="radio"
               id="traveling"
@@ -108,7 +110,7 @@
             Traveling
           </label>
 
-          <label for="technology">
+          <label>
             <input
               type="radio"
               id="technology"
@@ -118,7 +120,7 @@
             Technology
           </label>
 
-          <label for="art">
+          <label>
             <input type="radio" name="field-of-interest" id="art" value="Art" />
             Art
           </label>
@@ -127,35 +129,28 @@
         <fieldset id="limits">
           <legend>What most limits the exploration of your hobby?</legend>
 
-          <label
-            ><input
-              type="checkbox"
-              name="hobby-limits"
-              id="cost"
-              value="cost"
-            />Cost</label
-          >
+          <label>
+            <input type="checkbox" name="hobby-limits" id="cost" value="cost" />
+            Cost
+          </label>
 
-          <label
-            ><input
-              type="checkbox"
-              name="hobby-limits"
-              id="time"
-              value="time"
-            />Time</label
-          >
+          <label>
+            <input type="checkbox" name="hobby-limits" id="time" value="time" />
+            Time
+          </label>
 
-          <label
-            ><input
+          <label>
+            <input
               type="checkbox"
               name="hobby-limits"
               id="community"
               value="community"
-            />Lack of access to hobby community</label
-          >
+            />
+            Lack of access to hobby community
+          </label>
         </fieldset>
 
-        <label>
+        <label id="text-area-label">
           What is your hobby and which aspect of it do you most enjoy?
           <textarea id="text-area" name="text-area"></textarea>
         </label>
