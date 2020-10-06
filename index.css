@@ -1,31 +1,31 @@
 body {
   background: linear-gradient(
       135deg,
-      #e6a280 21px,
-      #e6a280 22px,
-      #e6a280 24px,
+      rgba(230, 162, 128, 0.4) 21px,
+      rgba(230, 162, 128, 0.4) 22px,
+      rgba(230, 162, 128, 0.4) 24px,
       transparent 24px,
       transparent 67px,
-      #e6a280 67px,
-      #e6a280 69px,
+      rgba(230, 162, 128, 0.4) 67px,
+      rgba(230, 162, 128, 0.4) 69px,
       transparent 69px
     ),
     linear-gradient(
         225deg,
-        #e6a280 21px,
-        #e6a280 22px,
-        #e6a280 24px,
+        rgba(230, 162, 128, 0.3) 21px,
+        rgba(230, 162, 128, 0.3) 22px,
+        rgba(230, 162, 128, 0.3) 24px,
         transparent 24px,
         transparent 67px,
-        #e6a280 67px,
-        #e6a280 69px,
+        rgba(230, 162, 128, 0.3) 67px,
+        rgba(230, 162, 128, 0.3) 69px,
         transparent 69px
       )
       0 64px;
   background-color: #d3dff5;
   background-size: 64px 128px;
   margin: 0px;
-  font-family: "Piazzolla", serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 header {
